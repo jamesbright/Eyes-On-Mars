@@ -1,0 +1,57 @@
+body{
+  background-color: burlywood;
+}
+#image {
+  width:100%;
+  height: 320px;
+}
+
+#loading{
+  position:absolute;
+  top:45%;
+  left:45%;
+  z-index: 100;
+}
+
+.hidden {
+display:none;
+}
+.visible {
+display:block;
+position:absolute;
+top:0;left:0;
+}
+.mrover-photo-details{
+text-align: center;
+}
+
+.mrover-data-container:hover #image,
+.mrover-data-container:focus #image {
+  transform: scale(1.5);
+  z-index: 100;
+}
+
+#image::before {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mrover-data-container:hover #image:before,
+.mrover-data-container:focus #image:before {
+  display: block;
+}
+
+.row.no-pad {
+  margin-right:0;
+  margin-left:0;
+}
+.row.no-pad > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+.wrapper{
+margin-top:35px;
+}
